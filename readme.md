@@ -19,16 +19,16 @@ Features
    - *Nested object properties filter and observing (roadmap for v1.0.0)*
    - *One-way, two-way or once type of binding (roadmap for v1.0.0)*
 
-***
 
-| Solutions: | Binding.js | Object watching by Mozilla | Object watching (polyfill) | Object.observe |
+
+| Solutions | Binding.js | Object watching by Mozilla | Object watching (polyfill) | Object.observe |
 |:----------------------------------:|:-----------:|:--------------------------:|:--------------------------:|:--------------:|
-| Sync / Async | Both | Only sync | Only sync | Only async |
-| Browser compatibility | High | Depricated | High | Low (yet) |
-| Performance | Very High | - | Mid | Low |
-| Support DOM | Yes | No | No | No |
-| Properties filter | Yes | Yes | Yes | No |
-| Change actions (update/add/remove) | Only Update | Only Update | Only Update | All |
+| Sync / Async | **Both** | Only sync | Only sync | Only async |
+| Browser compatibility | **High** | Depricated | **High** | Low (yet) |
+| Performance | **Very High** | - | Mid | Low |
+| Support DOM | **Yes** | No | No | No |
+| Properties filter | **Yes** | **Yes** | **Yes** | No |
+| Change actions (update/add/remove) | Only Update | Only Update | Only Update | **All** |
 
 
 Get started
