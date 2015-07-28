@@ -21,18 +21,19 @@
 <div id='div'>   
 </div>
 
-<!--<input id="myInput" type="checkbox">-->
-<textarea id="myInput" autofocus></textarea>
+<input id="checkbox" type="checkbox">
+<textarea autofocus></textarea>
 
-<button type="button" id='button'>text</button>
+<button type="button">text</button>
 
 <script src="../lib/binding.js"></script>
 <script>
     var list     = document.querySelector('ol');
-    var div      = document.getElementById('div');
-    var checkbox = document.getElementById('myInput');
-    var select   = document.getElementById('select');
-    var button   = document.getElementById('button');
+    var div      = document.querySelector('div');
+    var textarea = document.querySelector('textarea');
+    var checkbox = document.getElementById('checkbox');
+    var select   = document.querySelector('select');
+    var button   = document.querySelector('button');
 
     Binding.on(list, undefined, function (target, property, newValue, oldValue) {
         console.log(target.nodeName.toLowerCase() + '.changed: ', property, newValue, oldValue);
@@ -43,12 +44,16 @@
         //console.log('visiblility:', newValue.visibility);
     });
     
+    Binding.on(textarea, undefined, function (target, property, newValue, oldValue) {
+        console.log(target.nodeName.toLowerCase() + '.changed: ', property, newValue, oldValue);
+    });
+    
     Binding.on(checkbox, undefined, function (target, property, newValue, oldValue) {
         console.log(target.nodeName.toLowerCase() + '.changed: ', property, newValue, oldValue);
     });
     
     Binding.on(select, undefined, function (target, property, newValue, oldValue) {
-        console.log(target.nodeName.toLowerCase() + '.changed: ', property, newValue, oldValue); 
+        console.log(target.nodeName.toLowerCase() + '.changed: ', property, newValue, oldValue);
     });
     
     Binding.on(button, undefined, function (target, property, newValue, oldValue) {
