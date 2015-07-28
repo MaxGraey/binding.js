@@ -6,7 +6,7 @@ Bind and watch updating property or member changes of javascript object or DOM-e
 
 Features
 --------
-   - **Blazing fast over dirty-check and Object.observe**
+   - **Blazing fast over dirty-check and `Object.observe`**
    - **Atomic updates**
    - **Properties filter**
    - **Support DOM-elements**
@@ -37,7 +37,7 @@ Syntax
 ### Binding.on(object, properties, callback, options)
 
 #### Description
-**Binding.on** add watches for assignment to a properties named **properties** in **object**, calling **callback**(target, property, newValue, oldValue) whenever any property in properties list is set.
+**`Binding.on`** add watches for assignment to a properties named `properties` in `object`, calling `callback(target, property, newValue, oldValue)` whenever any property in properties list is set.
 
 #### Usage
 ##### Setup target object or prototype:
@@ -78,8 +78,8 @@ Binding.on(target, null, function (target, property, newValue, oldValue) {
 target.num  = 100500
 target.text = 'bang!'
 ```
-##### and get console result: 
-```text
+##### and get console output:
+```
 new value of num: 100500
 new value of text: bang!
 ```
@@ -87,7 +87,7 @@ new value of text: bang!
 ### Binding.off(object, properties)
 
 #### Description
-**Binding.off** removes a watchpoint set with the **Binding.on** method.
+**`Binding.off`** removes a watchpoint set with the **`Binding.on`** method.
 
 #### Usage
 ##### Unbind only one watching property:
