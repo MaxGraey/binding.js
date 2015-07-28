@@ -78,6 +78,11 @@ Binding.on(target, null, function (target, property, newValue, oldValue) {
 target.num  = 100500
 target.text = 'bang!'
 ```
+##### and get console result: 
+```js
+new value of num: 10050
+new value of text: bang!
+```
 
 ### Binding.off(object, properties)
 
