@@ -25,7 +25,7 @@ Features
 |:----------------------------------:|:-----------:|:--------------------------:|:--------------------------:|:--------------:|
 | Sync / Async | **Both** | Only sync | Only sync | Only async |
 | Browser compatibility | **High** | Depricated | **High** | Low (yet) |
-| Performance | **Very High** | - | Medium | Low |
+| Performance | **Very High** | ~ | High | Low |
 | Support DOM | **✓** | ⨉ | ⨉ | ⨉ |
 | Properties filter | **✓** | **✓** | **✓** | ⨉ |
 | Change actions (update/add/remove) | Only Update | Only Update | Only Update | **All** |
