@@ -1,31 +1,3 @@
-<!--
-
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-    <input id="myInput" type="checkbox"/>
-    
-    <script src="../object-watch.js"></script>
-    <script src="../binding.js"></script>
-    <script lang="text/javascript">
-        var e = document.getElementById('myInput');
-        
-        console.log(Object.getOwnPropertyDescriptor(e, 'checked'));
-
-        Object.bind(e, 'checked', function (property, newValue) {
-            console.log('changed: ' + newValue);
-        });
-        
-        console.log(Object.getOwnPropertyDescriptor(e, 'checked'));
-    </script>
-</body>
-</html>-->
-
-
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -54,9 +26,8 @@
 
 <button type="button" id='button'>text</button>
 
-<script src="../binding.js"></script>
+<script src="../lib/binding.js"></script>
 <script>
-    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
     var list     = document.querySelector('ol');
     var div      = document.getElementById('div');
     var checkbox = document.getElementById('myInput');
