@@ -1,0 +1,41 @@
+{
+    "name": "binding.js",
+    "version": "0.0.0",
+    "description": "Bind and watch any changes of object like Object.observe",
+    "author": "Maxim Shaydo aka Max Graey <maxgraey@gmail.com>",
+    "contributors": [{
+        "name": "Max Graey",
+        "email": "maxgraey@gmail.com"
+    }],
+    "scripts": {},
+    "main": "main.js",
+    "directories": {
+        "doc": "docs",
+        "test": "tests"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/maxgraey/binding.js.git"
+    },
+    "bugs": {
+        "url": "https://github.com/maxgraey/binding.js/issues"
+    },
+    "homepage": "https://github.com/maxgraey/binding.js#readme",
+    "keywords": [
+        "binding",
+        "data-binding",
+        "watch",
+        "observe",
+        "observing",
+        "changes",
+        "dom",
+        "property"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "ink-docstrap": "^0.5.2"
+    },
+    "preferGlobal": true,
+    "analyze": true,
+    "license": "MIT"
+}

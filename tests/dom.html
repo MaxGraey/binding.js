@@ -1,0 +1,96 @@
+<!--
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <input id="myInput" type="checkbox"/>
+    
+    <script src="../object-watch.js"></script>
+    <script src="../binding.js"></script>
+    <script lang="text/javascript">
+        var e = document.getElementById('myInput');
+        
+        console.log(Object.getOwnPropertyDescriptor(e, 'checked'));
+
+        Object.bind(e, 'checked', function (property, newValue) {
+            console.log('changed: ' + newValue);
+        });
+        
+        console.log(Object.getOwnPropertyDescriptor(e, 'checked'));
+    </script>
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<ol contenteditable oninput="">
+  <li>Press enter</li>
+</ol>
+
+
+<select id='select'>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+
+<div id='div'>   
+</div>
+
+<!--<input id="myInput" type="checkbox">-->
+<textarea id="myInput" autofocus></textarea>
+
+<button type="button" id='button'>text</button>
+
+<script src="../binding.js"></script>
+<script>
+    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+    var list     = document.querySelector('ol');
+    var div      = document.getElementById('div');
+    var checkbox = document.getElementById('myInput');
+    var select   = document.getElementById('select');
+    var button   = document.getElementById('button');
+
+    Binding.on(list, undefined, function (target, property, newValue, oldValue) {
+        console.log(target.nodeName.toLowerCase() + '.changed: ', property, newValue, oldValue);
+    });
+
+    Binding.on(div, undefined, function (target, property, newValue, oldValue) {
+        console.log(target.nodeName.toLowerCase() + '.changed: ', property, newValue, oldValue);
+        //console.log('visiblility:', newValue.visibility);
+    });
+    
+    Binding.on(checkbox, undefined, function (target, property, newValue, oldValue) {
+        console.log(target.nodeName.toLowerCase() + '.changed: ', property, newValue, oldValue);
+    });
+    
+    Binding.on(select, undefined, function (target, property, newValue, oldValue) {
+        console.log(target.nodeName.toLowerCase() + '.changed: ', property, newValue, oldValue); 
+    });
+    
+    Binding.on(button, undefined, function (target, property, newValue, oldValue) {
+        console.log(target.nodeName.toLowerCase() + '.changed: ', property, newValue, oldValue);
+    });
+    
+    
+    //checkbox.disabled = true;
+    
+    div.hidden = true;
+    //div.hidden = false;
+    //div.style.visibility = "hidden";
+    
+</script>
+</body>
+</html>

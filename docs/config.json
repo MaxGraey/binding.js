@@ -1,0 +1,34 @@
+{
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "plugins": ["plugins/markdown"],
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false,
+        "dateFormat": "ddd MMM Do YYYY",
+        "outputSourceFiles": false,
+        "outputSourcePath": false,
+        "systemName": "Binding.js",
+        "footer": "",
+        "copyright": "Max Graey © 2015",
+        "navType": "vertical",
+        "theme": "superhero",
+        "linenums": true,
+        "collapseSymbols": false,
+        "inverseNav": false,
+        "highlightTutorialCode": true,
+        "protocol": "html://"
+    },
+    "markdown": {
+        "parser": "gfm",
+        "hardwrap": false
+    },
+    "opts": {
+        "template": "../node_modules/ink-docstrap/template",
+        "encoding": "utf8",
+        "destination": ".",
+        "recurse": true,
+        "private": true
+    }
+}
