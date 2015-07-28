@@ -60,7 +60,7 @@ Binding.on(target, ['text', 'num'], function (target, property, newValue, oldVal
     }
 })
 ```
-##### or watching all properties (you can use: [], null, undefined, ''):
+##### or watching all properties (you can use: `[]`, `null`, `undefined` or `''`):
 ```js
 Binding.on(target, null, function (target, property, newValue, oldValue) {
     switch (property) {
