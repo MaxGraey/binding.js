@@ -1,6 +1,6 @@
 {
     "name": "binding.js",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "Bind and watch updating property or member changes of javascript object or DOM-element.",
     "author": "Maxim Shaydo aka Max Graey <maxgraey@gmail.com>",
     "contributors": [{
