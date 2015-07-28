@@ -1,5 +1,6 @@
 Binding.js
 ===================
+[ ![NPM Version](http://img.shields.io/npm/v/binding.js.svg?style=flat) ](https://www.npmjs.com/package/binding.js) [ ![License](http://img.shields.io/npm/l/binding.js.svg?style=flat) ](http://opensource.org/licenses/BSD-3-Clause)
 Bind and watch updating property or member changes of javascript object or DOM-element.
 
 ----------
