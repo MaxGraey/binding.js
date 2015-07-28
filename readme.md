@@ -79,7 +79,7 @@ target.num  = 100500
 target.text = 'bang!'
 ```
 ##### and get console result: 
-```js
+```text
 new value of num: 10050
 new value of text: bang!
 ```
