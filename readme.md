@@ -21,11 +21,11 @@ Features
 
 
 
-| Solutions | Binding.js | Object watching by Mozilla | Object watching (polyfill) | Object.observe |
+| Solutions | Binding.js | [Object watching by Mozilla][moz] | [Object watching (polyfill)][poly] | [Object.observe][observe] |
 |:----------------------------------:|:-----------:|:--------------------------:|:--------------------------:|:--------------:|
 | Sync / Async | **Both** | Only sync | Only sync | Only async |
 | Browser compatibility | **High** | Depricated | **High** | Low (yet) |
-| Performance | **Very High** | - | Mid | Low |
+| Performance | **Very High** | - | Medium | Low |
 | Support DOM | **Yes** | No | No | No |
 | Properties filter | **Yes** | **Yes** | **Yes** | No |
 | Change actions (update/add/remove) | Only Update | Only Update | Only Update | **All** |
@@ -112,4 +112,7 @@ Syntax
 >Binding.off(target)
 >```
 
+[moz]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/watch
+[poly]: https://gist.github.com/eligrey/384583
+[observe]: http://arv.github.io/ecmascript-object-observe
 [npm]: https://www.npmjs.com/package/binding.js
