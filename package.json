@@ -1,6 +1,6 @@
 {
     "name": "binding.js",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Bind and watch any changes of object like Object.observe",
     "author": "Maxim Shaydo aka Max Graey <maxgraey@gmail.com>",
     "contributors": [{
