@@ -1,19 +1,21 @@
 Binding.js
 ===================
+[ ![NPM Version](http://img.shields.io/npm/v/binding.js.svg?style=flat) ](https://www.npmjs.com/package/binding.js) [ ![Issues](https://img.shields.io/github/issues/MaxGraey/binding.js.svg) ](https://github.com/MaxGraey/binding.js/issues)  [ ![License](http://img.shields.io/npm/l/binding.js.svg?style=flat) ](http://opensource.org/licenses/BSD-3-Clause)
+
 Bind and watch updating property or member changes of javascript object or DOM-element.
 
 ----------
 
 Features
 --------
-   - **Blazing fast over dirty-check and Object.observe**
+   - **Blazing fast over dirty-check and `Object.observe`**
    - **Atomic updates**
    - **Properties filter**
    - **Support DOM-elements**
    - **Sync with zero latency or async binding**
    - **No dependencies**
    - *Allowing properties not only fields (roadmap for v0.1.0)*
-   - *Several listeners (roadmap for v0.1.0)*
+   - *Several per-property callbacks (roadmap for v0.1.0)*
    - *Nested object properties filter and observing (roadmap for v1.0.0)*
    - *One-way, two-way or once type of binding (roadmap for v1.0.0)*
 
@@ -37,7 +39,7 @@ Syntax
 ### Binding.on(object, properties, callback, options)
 
 #### Description
-**Binding.on** add watches for assignment to a properties named **properties** in **object**, calling **callback**(target, property, newValue, oldValue) whenever any property in properties list is set.
+**`Binding.on`** add watches for assignment to a properties named `properties` in `object`, calling `callback(target, property, newValue, oldValue)` whenever any property in properties list is set.
 
 #### Usage
 ##### Setup target object or prototype:
@@ -60,7 +62,7 @@ Binding.on(target, ['text', 'num'], function (target, property, newValue, oldVal
     }
 })
 ```
-##### or watching all properties (you can use: [], null, undefined, ''):
+##### or watching all properties (you can use: `[]`, `null`, `undefined` or `''`):
 ```js
 Binding.on(target, null, function (target, property, newValue, oldValue) {
     switch (property) {
@@ -78,11 +80,16 @@ Binding.on(target, null, function (target, property, newValue, oldValue) {
 target.num  = 100500
 target.text = 'bang!'
 ```
+##### and get console output:
+```
+new value of num: 100500
+new value of text: bang!
+```
 
 ### Binding.off(object, properties)
 
 #### Description
-**Binding.off** removes a watchpoint set with the **Binding.on** method.
+**`Binding.off`** removes a watchpoint set with the **`Binding.on`** method.
 
 #### Usage
 ##### Unbind only one watching property:
