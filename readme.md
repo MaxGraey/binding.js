@@ -4,7 +4,7 @@ Binding.js
 
 Bind and watch updating property or member changes of javascript object or DOM-element.
 
-----------
+
 
 Features
 --------
@@ -19,7 +19,18 @@ Features
    - *Nested object properties filter and observing (roadmap for v1.0.0)*
    - *One-way, two-way or once type of binding (roadmap for v1.0.0)*
 
-----------
+***
+
+| Solutions: | Binding.js | Object watching by Mozilla | Object watching (polyfill) | Object.observe |
+|:----------------------------------:|:-----------:|:--------------------------:|:--------------------------:|:--------------:|
+| Sync / Async | Both | Only sync | Only sync | Only async |
+| Browser compatibility | High | Depricated | High | Low (yet) |
+| Performance | Very High | - | Mid | Low |
+| Support DOM | Yes | No | No | No |
+| Properties filter | Yes | Yes | Yes | No |
+| Change actions (update/add/remove) | Only Update | Only Update | Only Update | All |
+
+
 Get started
 -----------
 [binding.js on node package manager][npm]
@@ -42,49 +53,49 @@ Syntax
 **`Binding.on`** add watches for assignment to a properties named `properties` in `object`, calling `callback(target, property, newValue, oldValue)` whenever any property in properties list is set.
 
 #### Usage
-##### Setup target object or prototype:
-``` js
-var target = {
-	num:  0,
-	text: ''
-}
-```
-##### explicitly set watching some properties:
-```js
-Binding.on(target, ['text', 'num'], function (target, property, newValue, oldValue) {
-    switch (property) {
-        case 'text':
-        console.log('new value of text:', newValue)
-        break
-        case 'num':
-        console.log('new value of num:', newValue)
-        break
-    }
-})
-```
-##### or watching all properties (you can use: `[]`, `null`, `undefined` or `''`):
-```js
-Binding.on(target, null, function (target, property, newValue, oldValue) {
-    switch (property) {
-        case 'text':
-        console.log('new value of text:', newValue)
-        break
-        case 'num':
-        console.log('new value of num:', newValue)
-        break
-    }
-})
-```
-##### after that we can change some properties: 
-```js
-target.num  = 100500
-target.text = 'bang!'
-```
-##### and get console output:
-```
-new value of num: 100500
-new value of text: bang!
-```
+> Setup target object or prototype:
+> ``` js
+> var target = {
+>    num:  0,
+>    text: ''
+>}
+>```
+> explicitly set watching some properties:
+>```js
+>Binding.on(target, ['text', 'num'], function (target, property, newValue, oldValue) {
+>    switch (property) {
+>        case 'text':
+>        console.log('new value of text:', newValue)
+>        break
+>        case 'num':
+>        console.log('new value of num:', newValue)
+>        break
+>    }
+>})
+>```
+> or watching all properties (you can use: `[]`, `null`, `undefined` or `''`):
+>```js
+>Binding.on(target, null, function (target, property, newValue, oldValue) {
+>    switch (property) {
+>        case 'text':
+>        console.log('new value of text:', newValue)
+>        break
+>        case 'num':
+>        console.log('new value of num:', newValue)
+>        break
+>    }
+>})
+>```
+> after that we can change some properties: 
+>```js
+>target.num  = 100500
+>target.text = 'bang!'
+>```
+> and get console output:
+>```
+>new value of num: 100500
+>new value of text: bang!
+>```
 
 ### Binding.off(object, properties)
 
@@ -92,13 +103,13 @@ new value of text: bang!
 **`Binding.off`** removes a watchpoint set with the **`Binding.on`** method.
 
 #### Usage
-##### Unbind only one watching property:
-```js
-Binding.off(target, 'text')
-```
-##### or unbind all watching properties:
-```js
-Binding.off(target)
-```
+> Unbind only one watching property:
+>```js
+>Binding.off(target, 'text')
+>```
+> or unbind all watching properties:
+>```js
+>Binding.off(target)
+>```
 
 [npm]: https://www.npmjs.com/package/binding.js
