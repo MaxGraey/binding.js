@@ -13,7 +13,7 @@ Features
    - **Sync with zero latency or async binding**
    - **No dependencies**
    - *Allowing properties not only fields (roadmap for v0.1.0)*
-   - *Several listeners (roadmap for v0.1.0)*
+   - *Several per-property callbacks (roadmap for v0.1.0)*
    - *Nested object properties filter and observing (roadmap for v1.0.0)*
    - *One-way, two-way or once type of binding (roadmap for v1.0.0)*
 
