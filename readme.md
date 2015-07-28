@@ -10,12 +10,12 @@ Features
    - **Atomic updates**
    - **Properties filter**
    - **Support dom elements**
-   - **Allowing properties not only fields**
    - **Sync with zero latency or async binding**
-   -  **No dependencies**
-   -  *Nested object properties filter and observing (roadmap for v1.0)*
-   - *One-way, two-way or once type of binding (roadmap for v1.0)*
-   - *Several listeners (roadmap for v1.0)*
+   - **No dependencies**
+   - *Allowing properties not only fields (roadmap for v0.1.0)*
+   - *Several listeners (roadmap for v0.1.0)*
+   - *Nested object properties filter and observing (roadmap for v1.0.0)*
+   - *One-way, two-way or once type of binding (roadmap for v1.0.0)*
 
 ----------
 Get started
