@@ -4,8 +4,6 @@ Binding.js
 
 Bind and watch updating property or member changes of javascript object or DOM-element.
 
-----------
-
 Features
 --------
    - **Blazing fast over dirty-check and `Object.observe`**
@@ -19,7 +17,6 @@ Features
    - *Nested object properties filter and observing (roadmap for v1.0.0)*
    - *One-way, two-way or once type of binding (roadmap for v1.0.0)*
 
-----------
 Get started
 -----------
 [binding.js on node package manager][npm]
