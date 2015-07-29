@@ -53,14 +53,14 @@ Syntax
 **`Binding.on`** add watches for assignment to a properties named `properties` in `object`, calling `callback(target, property, newValue, oldValue)` whenever any property in properties list is set.
 
 #### Usage
-> Setup target object or prototype:
-> ``` js
-> var target = {
+>Setup target object or prototype:
+>``` js
+>var target = {
 >    num:  0,
 >    text: ''
 >}
 >```
-> explicitly set watching some properties:
+>explicitly set watching some properties:
 >```js
 >Binding.on(target, ['text', 'num'], function (target, property, newValue, oldValue) {
 >    switch (property) {
@@ -73,7 +73,7 @@ Syntax
 >    }
 >})
 >```
-> or watching all properties (you can use: `[]`, `null`, `undefined` or `''`):
+>or watching all properties (you can use: `[]`, `null`, `undefined` or `''`):
 >```js
 >Binding.on(target, null, function (target, property, newValue, oldValue) {
 >    switch (property) {
@@ -86,12 +86,12 @@ Syntax
 >    }
 >})
 >```
-> after that we can change some properties: 
+>after that we can change some properties: 
 >```js
 >target.num  = 100500
 >target.text = 'bang!'
 >```
-> and get console output:
+>and get console output:
 >```
 >new value of num: 100500
 >new value of text: bang!
@@ -103,11 +103,11 @@ Syntax
 **`Binding.off`** removes a watchpoint set with the **`Binding.on`** method.
 
 #### Usage
-> Unbind only one watching property:
+>Unbind only one watching property:
 >```js
 >Binding.off(target, 'text')
 >```
-> or unbind all watching properties:
+>or unbind all watching properties:
 >```js
 >Binding.off(target)
 >```
