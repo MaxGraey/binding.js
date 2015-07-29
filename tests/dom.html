@@ -18,7 +18,7 @@
   <option value="audi">Audi</option>
 </select>
 
-<div id='div' blur='false'>  
+<div id='div' hidden='true'>  
 </div>
 
 <input id="checkbox" type="checkbox">
@@ -39,10 +39,10 @@
         console.log(target.nodeName.toLowerCase() + '.changed: ', property, newValue, oldValue);
     });
 
-    Binding.on(div, undefined, function (target, property, newValue, oldValue) {
+    /*Binding.on(div, undefined, function (target, property, newValue, oldValue) {
         console.log(target.nodeName.toLowerCase() + '.changed: ', property, newValue, oldValue);
         //console.log('visiblility:', newValue.visibility);
-    });
+    });*/
     
     Binding.on(textarea, undefined, function (target, property, newValue, oldValue) {
         console.log(target.nodeName.toLowerCase() + '.changed: ', property, newValue, oldValue);
@@ -63,11 +63,39 @@
     
     //checkbox.disabled = true;
     
-    Binding.off(div, 'hidden');
+    //Binding.off(div, 'hidden');
     
-    div.hidden = true;
+    //div.hidden = true;
     //div.style = "visibility: hidden;";
     div.draggable = true;
+    
+    var callback = function (target, property, newValue, oldValue) {
+        console.log('changed:', newValue, oldValue);
+    }
+    
+    // TODO Replace MutationObserver
+    
+    var object = div;
+    var property = 'hidden';
+    
+    Object.defineProperty(object, property, {
+        oldValue: object.getAttribute(property),
+        get: function () {
+            return this.getAttribute(property);
+        },
+        
+        set: function (newval) {
+            if (this.hasAttribute(property)) {
+                this.setAttribute(property, newval);
+                callback(this, property, newval, this.oldValue);
+                this.oldValue = newval;
+            }
+        }
+    });
+    
+    div.hidden = true;
+    
+    console.log(div['hidden']);
     
     //div.hidden = false;
     //div.style.visibility = "hidden";
