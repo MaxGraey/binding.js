@@ -21,7 +21,7 @@ Features
 
 
 
-| Solutions | Binding.js | [Object watching by Mozilla][moz] | [Object watching (polyfill)][poly] | [Object.observe][observe] |
+| Solutions | Binding.js | [Object watching by Mozilla][moz] | [Object watching (polyfill)][poly] | [Object.observe][observe](ECMAScript 2015) |
 |:----------------------------------:|:-----------:|:--------------------------:|:--------------------------:|:--------------:|
 | Sync / Async | **Both** | Only Sync | Only Sync | Only Async |
 | Browser compatibility | **High** | Depricated | **High** | Low (yet) |
