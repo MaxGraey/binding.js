@@ -18,7 +18,7 @@
   <option value="audi">Audi</option>
 </select>
 
-<div id='div'>   
+<div id='div' blur='false'>  
 </div>
 
 <input id="checkbox" type="checkbox">
@@ -66,7 +66,9 @@
     Binding.off(div, 'hidden');
     
     div.hidden = true;
-    div.style = "visibility: hidden;";
+    //div.style = "visibility: hidden;";
+    div.draggable = true;
+    
     //div.hidden = false;
     //div.style.visibility = "hidden";
     
