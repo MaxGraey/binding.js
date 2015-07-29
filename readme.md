@@ -23,7 +23,7 @@ Features
 
 | Solutions | Binding.js | [Object watching by Mozilla][moz] | [Object watching (polyfill)][poly] | [Object.observe][observe] |
 |:----------------------------------:|:-----------:|:--------------------------:|:--------------------------:|:--------------:|
-| Sync / Async | **Both** | Only sync | Only sync | Only async |
+| Sync / Async | **Both** | Only Sync | Only Sync | Only Async |
 | Browser compatibility | **High** | Depricated | **High** | Low (yet) |
 | Performance | **Very High** | ~ | High | Low |
 | Support DOM | **✓** | ⨉ | ⨉ | ⨉ |
