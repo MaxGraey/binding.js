@@ -4,6 +4,8 @@ Binding.js
 
 Bind and watch updating property or member changes of javascript object or DOM-element.
 
+
+
 Features
 --------
    - **Blazing fast over dirty-check and `Object.observe`**
@@ -16,6 +18,7 @@ Features
    - *Several per-property callbacks (roadmap for v0.1.0)*
    - *Nested object properties filter and observing (roadmap for v1.0.0)*
    - *One-way, two-way or once type of binding (roadmap for v1.0.0)*
+
 
 Get started
 -----------
@@ -98,4 +101,7 @@ Syntax
 >Binding.off(target)
 >```
 
+[moz]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/watch
+[poly]: https://gist.github.com/eligrey/384583
+[observe]: http://arv.github.io/ecmascript-object-observe
 [npm]: https://www.npmjs.com/package/binding.js
