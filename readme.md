@@ -1,6 +1,6 @@
 Binding.js
 ===================
-[![NPM Version](http://img.shields.io/npm/v/binding.js.svg?style=flat-square)](https://www.npmjs.com/package/binding.js)[![Issues](https://img.shields.io/github/issues/MaxGraey/binding.js.svg?style=flat-square)](https://github.com/MaxGraey/binding.js/issues)[![License](http://img.shields.io/npm/l/binding.js.svg?style=flat-square)](http://opensource.org/licenses/BSD-3-Clause)
+[![npm:](https://img.shields.io/npm/v/binding.js.svg?style=flat-square)](https://www.npmjs.com/packages/binding.js) [![issues](https://img.shields.io/github/issues/MaxGraey/binding.js.svg?style=flat-square)](https://github.com/MaxGraey/binding.js/issues) [![license:bsd-3-clause](https://img.shields.io/npm/l/binding.js.svg?style=flat-square)](http://opensource.org/licenses/BSD-3-Clause)
 
 Bind and watch updating property or member changes of javascript object or DOM-element.
 
