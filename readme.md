@@ -13,8 +13,9 @@ Features
    - **Properties filter**
    - **Support DOM-elements**
    - **Sync with zero latency or async binding**
+   - **Follows [semantic versioning](http://semver.org) for releases**
    - **No dependencies**
-   - *Allowing properties not only fields (roadmap for v0.1.0)*
+   - *Allowing properties with accessors as well (roadmap for v0.1.0)*
    - *Several per-property callbacks (roadmap for v0.1.0)*
    - *Nested object properties filter and observing (roadmap for v1.0.0)*
    - *One-way, two-way or once type of binding (roadmap for v1.0.0)*
@@ -32,7 +33,7 @@ Features
 
 Get started
 -----------
-[binding.js on node package manager][npm]
+[binding.js on node package manager](https://www.npmjs.com/package/binding.js)
 
 **node.js install:**
 ``` bash
@@ -114,4 +115,3 @@ Syntax
 [moz]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/watch
 [poly]: https://gist.github.com/eligrey/384583
 [observe]: http://arv.github.io/ecmascript-object-observe
-[npm]: https://www.npmjs.com/package/binding.js
