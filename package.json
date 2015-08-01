@@ -22,15 +22,16 @@
     },
     "homepage": "https://github.com/maxgraey/binding.js#readme",
     "keywords": [
-        "binding",
+        "bind",
         "kvo",
         "data-binding",
         "watch",
-        "observe",
         "observing",
         "changes",
         "dom",
-        "property"
+        "object",
+        "tracing",
+        "binding-js"
     ],
     "dependencies": {},
     "devDependencies": {
