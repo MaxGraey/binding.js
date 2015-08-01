@@ -72,22 +72,5 @@
     "sub"           : false,  // Tolerate all forms of subscript notation besides dot notation e.g. `dict['key']` instead of `dict.key`.
     "trailing"      : true,   // Prohibit trailing whitespaces.
     "white"         : false,  // Check against strict whitespace and indentation rules.
-    "indent"        : 2,      // Specify indentation spacing
-
-    "-W004"         : false,
-	"-W014"         : false,
-	"-W030"         : false,
-	"-W032"         : false,
-	"-W033"         : false,
-	"-W038"         : false,
-	"-W041"         : false,
-	"-W048"         : false,
-	"-W054"         : false,
-	"-W061"         : false,
-	"-W069"         : false,
-    "-W077"         : false,
-	"-W080"         : false,
-	"-W083"         : false,
-	"-W084"         : false,
-    "-W086"         : false,
+    "indent"        : 4,      // Specify indentation spacing
 }
