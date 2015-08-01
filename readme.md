@@ -5,17 +5,20 @@ Binding.js
 Bind and watch updating property or member changes of javascript object or DOM-element.
 
 
+##### See [CHANGE.md] for changes
+
 
 Features
 --------
    - **Blazing fast over dirty-check and `Object.observe`**
    - **Atomic updates**
    - **Properties filter**
-   - **Support DOM-elements**
+   - **Support watching DOM properties**
+   - **Allowing properties with accessors**
    - **Sync with zero latency or async binding**
    - **Follows [semantic versioning](http://semver.org) for releases**
    - **No dependencies**
-   - *Allowing properties with accessors as well (roadmap for v0.1.0)*
+   - *Allowing static, instanced and prototype methods*
    - *Several per-property callbacks (roadmap for v0.1.0)*
    - *Nested object properties filter and observing (roadmap for v1.0.0)*
    - *One-way, two-way or once type of binding (roadmap for v1.0.0)*
@@ -76,7 +79,7 @@ Syntax
 >    }
 >})
 >```
->after that we can change some properties: 
+>after that we can change some properties:
 >```js
 >target.num  = 100500
 >target.text = 'bang!'
@@ -102,6 +105,7 @@ Syntax
 >Binding.off(target)
 >```
 
+[CHANGE.md]:https://github.com/MaxGraey/binding.js/blob/master/CHANGE.md
 [moz]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/watch
 [poly]: https://gist.github.com/eligrey/384583
 [observe]: http://arv.github.io/ecmascript-object-observe
