@@ -106,11 +106,15 @@ Syntax
 #### Usage
 >Unbind only one watching property:
 >```js
+>
 >Binding.off(target, 'text')
+>
 >```
 >or unbind all watching properties:
 >```js
+>
 >Binding.off(target)
+>
 >```
 
 [CHANGE.md]:https://github.com/MaxGraey/binding.js/blob/master/CHANGE.md
