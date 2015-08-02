@@ -22,8 +22,8 @@ Features
    - *Simplification interface (radmap for v0.1.0)*
    - *Several per-property callbacks (roadmap for v0.1.0)*
    - *Nested object properties filter and observing (roadmap for v1.0.0)*
+   - *Drop MutationObservers and use more low-level methods (roadmap for v1.0.0)*
    - *One-way, two-way or once type of binding (roadmap for v1.0.0)*
-
 
 | Solutions | Binding.js | [Object watching by Mozilla][moz] | [Object watching (polyfill)][poly] | [Object.observe (ECMAScript 2015)][observe] |
 |:----------------------------------:|:-----------:|:--------------------------:|:--------------------------:|:--------------:|
@@ -32,8 +32,8 @@ Features
 | Performance | **Very High** | ~ | High | Low |
 | Support DOM | **✓** | ⨉ | ⨉ | ⨉ |
 | Properties filter | **✓** | **✓** | **✓** | ⨉ |
+| Property with accesors | **✓** | ⨉ | ⨉ | ⨉ |
 | Change actions (update/add/remove) | Only Update | Only Update | Only Update | **All** |
-
 
 Get started
 -----------
