@@ -1,14 +1,14 @@
 {
     "name": "binding.js",
-    "version": "0.0.8",
-    "description": "Bind and watch updating property or member changes of javascript object or DOM-element.",
+    "version": "0.0.10",
+    "description": "Bind and watch updating any property changes of javascript object or DOM-element.",
     "author": "Maxim Shaydo aka Max Graey <maxgraey@gmail.com>",
     "contributors": [{
         "name": "Max Graey",
         "email": "maxgraey@gmail.com"
     }],
     "scripts": {},
-    "main": "main.js",
+    "main": "index.js",
     "directories": {
         "doc": "docs",
         "test": "tests"
@@ -22,15 +22,16 @@
     },
     "homepage": "https://github.com/maxgraey/binding.js#readme",
     "keywords": [
-        "binding",
+        "bind",
         "kvo",
         "data-binding",
         "watch",
-        "observe",
         "observing",
         "changes",
         "dom",
-        "property"
+        "object",
+        "tracing",
+        "binding-js"
     ],
     "dependencies": {},
     "devDependencies": {
