@@ -22,7 +22,7 @@ Features
    - *Simplification interface (radmap for v0.1.0)*
    - *Several per-property callbacks (roadmap for v0.1.0)*
    - *Nested object properties filter and observing (roadmap for v1.0.0)*
-   - *Drop MutationObservers and use more low-level methods* 
+   - *Drop MutationObservers and use more low-level methods*
    - *One-way, two-way or once type of binding (roadmap for v1.0.0)*
 
 
@@ -53,9 +53,14 @@ Syntax
 >var target = {
 >    num:  0,
 >    text: ''
->}
+>}```
+>Begin watching one of property
+>``` js
+>Binding.on(target,'text', function (target, property, newValue, oldValue) {
+>    console.log('new value of text:', newValue,' old value: ', oldValue)
+>})
 >```
->explicitly set watching some properties:
+>or explicitly set watching some properties:
 >```js
 >Binding.on(target, ['text', 'num'], function (target, property, newValue, oldValue) {
 >    switch (property) {
