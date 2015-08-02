@@ -1,3 +1,6 @@
+#### 0.0.10 Docs improvements
+* Nothing more
+
 #### 0.0.9 Improve property observing
 * Add observing for properties with accessors
 * Add CHANGE.md
@@ -21,7 +24,7 @@
 
 ---
 #### 0.0.1 Improved description
-* Add uses cases
+* Add usage cases and description of methods
 
 ---
 #### 0.0.0 Project alive
