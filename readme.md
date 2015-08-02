@@ -13,14 +13,16 @@ Features
    - **Blazing fast over dirty-check and `Object.observe`**
    - **Atomic updates**
    - **Properties filter**
-   - **Support watching DOM properties**
+   - **Support watching DOM properties and attributes**
    - **Allowing properties with accessors**
    - **Sync with zero latency or async binding**
    - **Follows [semantic versioning](http://semver.org) for releases**
    - **No dependencies**
    - *Allowing static, instanced and prototype methods*
+   - *Simplification interface (radmap for v0.1.0)*
    - *Several per-property callbacks (roadmap for v0.1.0)*
    - *Nested object properties filter and observing (roadmap for v1.0.0)*
+   - *Drop MutationObservers and use more low-level methods* 
    - *One-way, two-way or once type of binding (roadmap for v1.0.0)*
 
 
