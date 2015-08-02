@@ -60,7 +60,7 @@ Syntax
 >    console.log('new value of text:', newValue,' old value: ', oldValue)
 >})
 >```
->or explicitly set watching some properties:
+>or explicitly watching several properties:
 >```js
 >Binding.on(target, ['text', 'num'], function (target, property, newValue, oldValue) {
 >    switch (property) {
