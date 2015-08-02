@@ -49,13 +49,14 @@ Syntax
 
 #### Usage
 >Setup target object or prototype:
->``` js
+>```js
 >var target = {
 >    num:  0,
 >    text: ''
->}```
->Begin watching one of property
->``` js
+>}
+>```
+>Begin watching one of property:
+>```js
 >Binding.on(target,'text', function (target, property, newValue, oldValue) {
 >    console.log('new value of text:', newValue,' old value: ', oldValue)
 >})
