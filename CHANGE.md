@@ -1,3 +1,7 @@
+#### 0.0.11 Bug fixes
+* fix readme
+* bugfix MutaionObserve options
+
 #### 0.0.10 Docs improvements
 * Nothing more
 
