@@ -1,3 +1,6 @@
+#### 0.0.12 Bug fixes
+* add setImmediate polyfill
+
 #### 0.0.11 Bug fixes
 * fix readme
 * bugfix MutaionObserve options
