@@ -22,18 +22,9 @@ Features
    - *Simplification interface (radmap for v0.1.0)*
    - *Several per-property callbacks (roadmap for v0.1.0)*
    - *Nested object properties filter and observing (roadmap for v1.0.0)*
-   - *Drop MutationObservers and use more low-level methods (roadmap for v1.0.0)*
+   - *Drop MutationObservers and use more low-level methods*
    - *One-way, two-way or once type of binding (roadmap for v1.0.0)*
 
-| Solutions | Binding.js | [Object watching by Mozilla][moz] | [Object watching (polyfill)][poly] | [Object.observe (ECMAScript 2015)][observe] |
-|:----------------------------------:|:-----------:|:--------------------------:|:--------------------------:|:--------------:|
-| Sync / Async | **Both** | Only Sync | Only Sync | Only Async |
-| Browser compatibility | **High** | Depricated | **High** | Low (yet) |
-| Performance | **Very High** | ~ | High | Low |
-| Support DOM | **✓** | ⨉ | ⨉ | ⨉ |
-| Properties filter | **✓** | **✓** | **✓** | ⨉ |
-| Property with accesors | **✓** | ⨉ | ⨉ | ⨉ |
-| Change actions (update/add/remove) | Only Update | Only Update | Only Update | **All** |
 
 Get started
 -----------
@@ -58,13 +49,19 @@ Syntax
 
 #### Usage
 >Setup target object or prototype:
->``` js
+>```js
 >var target = {
 >    num:  0,
 >    text: ''
 >}
 >```
->explicitly set watching some properties:
+>Begin watching one of property:
+>```js
+>Binding.on(target,'text', function (target, property, newValue, oldValue) {
+>    console.log('new value of text:', newValue,' old value: ', oldValue)
+>})
+>```
+>or explicitly watching several properties:
 >```js
 >Binding.on(target, ['text', 'num'], function (target, property, newValue, oldValue) {
 >    switch (property) {
@@ -109,11 +106,15 @@ Syntax
 #### Usage
 >Unbind only one watching property:
 >```js
+>
 >Binding.off(target, 'text')
+>
 >```
 >or unbind all watching properties:
 >```js
+>
 >Binding.off(target)
+>
 >```
 
 [CHANGE.md]:https://github.com/MaxGraey/binding.js/blob/master/CHANGE.md

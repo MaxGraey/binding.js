@@ -1,11 +1,22 @@
+#### 0.0.12 Bug fixes
+* add setImmediate polyfill
+
+---
+#### 0.0.11 Bug fixes
+* fix readme
+* bugfix MutaionObserve options
+
+---
 #### 0.0.10 Docs improvements
 * Nothing more
 
+---
 #### 0.0.9 Improve property observing
 * Add observing for properties with accessors
 * Add CHANGE.md
 * Minor bugfixes
 
+---
 #### 0.0.7 Optimisations
 * Change mutation observers map to WeakMap
 * Code optimizations
